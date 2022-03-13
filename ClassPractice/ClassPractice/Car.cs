@@ -6,7 +6,8 @@ namespace ClassPractice
 {
     class Car:Vehicle
     {
-        
+        string Color;
+        int Year;
         string Brand;
         string Model;
         int FuelCapacity;
