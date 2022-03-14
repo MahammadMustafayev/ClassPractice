@@ -44,12 +44,12 @@ namespace ClassPractice
             this.FuelCapacity = FuelCapacity;
         }
 
-        public Car(string Color, int Year, string Brand, string Model, int FuelCapacity, int FuelFor1Km) : this(Color, Year, Brand, Model, FuelCapacity)
+        public Car(string Color, int Year, string Brand, string Model, int FuelCapacity, double FuelFor1Km) : this(Color, Year, Brand, Model, FuelCapacity)
         {
             this.FuelFor1Km = FuelFor1Km;
         }
 
-        public Car(string Color, int Year, string Brand, string Model, int FuelCapacity, int FuelFor1Km, int CurrentFuel) : this(Color, Year, Brand, Model, FuelCapacity, FuelFor1Km)
+        public Car(string Color, int Year, string Brand, string Model, int FuelCapacity, double FuelFor1Km, double CurrentFuel) : this(Color, Year, Brand, Model, FuelCapacity, FuelFor1Km)
         {
             this.CurrentFuel = CurrentFuel;
         }
@@ -59,8 +59,8 @@ namespace ClassPractice
         {
             Console.WriteLine($"Brand:{Brand}");
             Console.WriteLine($"Model:{Model}");
-            Console.WriteLine($"Çənin Tutduğu Benzin Həcmi:{FuelCapacity}");
-            Console.WriteLine($"1Km üçün istifadə etdiyi yanacaq:{FuelFor1Km}");
+            Console.WriteLine($"Çənin Tutduğu Benzin Həcmi {FuelCapacity}Litr");
+            Console.WriteLine($"1Km üçün istifadə etdiyi yanacaq {FuelFor1Km}Litr");
 
             Console.WriteLine("---------------------------------");
 
@@ -73,7 +73,7 @@ namespace ClassPractice
             if (driveway>0)
             {
                 CurrentFuel = (driveway *  FuelFor1Km);
-                Console.WriteLine($"Istifadə olunduqdan sonra qalan benzin:{CurrentFuel}");
+                Console.WriteLine($"Istifadə olunduqdan sonra qalan benzin {CurrentFuel}Litr");
             }
 
             else
