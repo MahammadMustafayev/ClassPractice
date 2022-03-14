@@ -62,11 +62,19 @@ namespace ClassPractice
 
         
 
-        public void Drive()
+        public void Drive(double driveway)
         {
+            if (driveway>0)
+            {
+                CurrentFuel = FuelCapacity - FuelFor1Km;
+                Console.WriteLine($"Istifadə olunduqdan sonra qalan benzin:{CurrentFuel}");
+            }
 
-            CurrentFuel = FuelCapacity - FuelFor1Km;
-            Console.WriteLine("CurrentFuel:" + CurrentFuel);
+            else
+            {
+                Console.WriteLine("Benzin Yoxdur");
+            }
+            
         }
 
 

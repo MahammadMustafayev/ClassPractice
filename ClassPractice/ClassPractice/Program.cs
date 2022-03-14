@@ -8,7 +8,7 @@ namespace ClassPractice
         {
             Car c1 = new Car("Black",1,"BMW","M5",12,1);
             c1.ShowInfo();
-            c1.Drive();
+            c1.Drive(10);
 
 
 
