@@ -57,7 +57,13 @@ namespace ClassPractice
 
         public void ShowInfo()
         {
-            Console.WriteLine($"{Brand} {Model} {FuelCapacity} {FuelFor1Km}");
+            Console.WriteLine($"Brand:{Brand}");
+            Console.WriteLine($"Model:{Model}");
+            Console.WriteLine($"Çənin Tutduğu Benzin Həcmi:{FuelCapacity}");
+            Console.WriteLine($"1Km üçün istifadə etdiyi yanacaq:{FuelFor1Km}");
+
+            Console.WriteLine("---------------------------------");
+
         }
 
         
@@ -66,7 +72,7 @@ namespace ClassPractice
         {
             if (driveway>0)
             {
-                CurrentFuel = FuelCapacity - FuelFor1Km;
+                CurrentFuel = (driveway *  FuelFor1Km);
                 Console.WriteLine($"Istifadə olunduqdan sonra qalan benzin:{CurrentFuel}");
             }
 
